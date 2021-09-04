@@ -1,0 +1,8 @@
+p.gray_text {
+    color: #aeaeae;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500 !important;
+    margin: 0;
+    padding: 0 20px !important;
+}

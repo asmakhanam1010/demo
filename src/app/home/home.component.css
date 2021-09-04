@@ -1,0 +1,141 @@
+.text-right.position-relative h4 {
+    margin: 0 !important;
+    font-size: 14px !important;
+}
+
+.cart-home .product .col-7 p {
+    margin: 0 !important;
+}
+
+.cart-home .product .col-7 {
+    padding-left: 8px;
+}
+
+.cart-home .product .col-1 svg {
+    position: absolute;
+    top: -9px;
+    width: 20px !important;
+    height: 19px !important;
+    left: 12px;
+}
+
+.cart-home .product .col-1 {
+    align-items: start !important;
+    position: relative;
+    padding: 0 !important;
+}
+
+.cart-home .product {
+    padding: 12px 0px !important;
+    align-items: center !important;
+}
+
+.text-right.position-relative .input-group {
+    margin-bottom: 4px !important;
+}
+
+.text-right.position-relative {
+    margin-left: 33px !important;
+}
+
+.modal {
+    background: #7f7f7fbf !important;
+}
+
+.modal.mobile_modal_box p {
+    font-size: 10px;
+    line-height: 1.4;
+    color: #c4c4c4;
+}
+
+.modal.mobile_modal_box h3 {
+    display: block;
+    margin-top: -10px !important;
+    margin-bottom: 6px !important;
+}
+
+.modal.mobile_modal_box .product-variants label {
+    font-size: 16px;
+    font-weight: 600 !important;
+}
+
+.modal.mobile_modal_box button {
+    height: 54px;
+    font-size: 20px;
+    font-weight: normal !important;
+    margin-top: 50px;
+}
+
+.modal.mobile_modal_box button.close {
+    margin-top: 0;
+    height: 40px;
+    width: 40px;
+    font-size: 35px !important;
+}
+
+.custom_inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom_inline img.icon {
+    width: 100%;
+    max-width: 8%;
+    margin: 12px 0;
+}
+
+.profile-dropdown {
+    z-index: 99999 !important;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.98px) {
+    .modal.mobile_modal_box h3 {
+        margin-top: 0px !important;
+        font-size: 18px !important;
+    }
+    .home-branding-section .home-branding .home-brand-name {
+        display: flex !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+        align-items: center !important;
+        max-width: 223px !important;
+        position: relative !important;
+        z-index: 999 !important;
+        height: 24px !important;
+        margin-top: 27px !important;
+        margin-bottom: -20px !important;
+        transform: none !important;
+    }
+    .home-branding-section .home-branding .home-brand-name .branding-offer {
+        top: -70px !important;
+        right: -60% !important;
+        z-index: 0 !important;
+    }
+    .col-sm-3.branding-highlights:nth-child(2)>.branding-points {
+        display: none;
+    }
+    .cart-home .product {
+        margin-left: 5px;
+    }
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 43px;
+    background: #fff;
+    padding: 0px;
+    box-shadow: 1px 3px 7px 0px #ccc;
+    z-index: 99;
+    width: 160px;
+    right: 15px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768.98px) {
+     ::ng-deep footer {
+        padding-bottom: 55px !important;
+        display: none;
+    }
+    .profile-dropdown {
+        top: 66px;
+    }
+}

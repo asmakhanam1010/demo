@@ -1,0 +1,86 @@
+<div class="container">
+    <div class="row pb-5">
+        <div class="col-sm-12 logo d-flex">
+            <img src="assets/images/logo.png" class="m-auto" alt="">
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-4 col-11 p-4 mx-auto bg-white">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-12">
+                        <div class="text-center mb-3">
+                            <p><strong><a routerLink="/login" class="anchor-text">I'm already member</a></strong></p>
+                            <div class="delivery-type-section mb-4 mx-auto w-90 mw-100" *ngIf="deliveryOptions">
+                                <div class='w-50 float-left'>
+                                    <input type="radio" [checked]="this.__cartService.deliveryType=='DELIVERY'" disabled class="d-none delivery-selection" name="delivery_type" id="collection">
+                                    <label for="collection">
+                                        <span><img src="assets/icons/delivery-grn.svg"></span> Delivery
+                                    </label>
+                                </div>
+                                <div class='w-50 float-left'>
+                                    <input type="radio" [checked]="this.__cartService.deliveryType=='PICKUP'" disabled class="d-none delivery-selection" name="delivery_type" id="delivery">
+                                    <label for="delivery">
+                                        <span><img src="assets/icons/collection-grn.svg"></span> Collection
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p><strong>Signup With</strong></p>
+                                <a (click)="signInWithGoogle()" class="btn py-2 btn-google text-white">
+                                    <span><img src="assets/icons/gplus.png"></span> Login with Google
+                                </a>
+                                <span class="text-center my-1 d-block" style="font-weight: 400!important;">OR</span>
+                                <a (click)="signInWithFB()" class="btn py-2 btn-facebook text-white">
+                                    <span><img src="assets/icons/facebook-logo.png"></span>Login with facebook
+                                </a>
+                            </div>
+                            <span class="text-center mt-3 d-block" style="font-weight: 400 !important;">OR</span>
+                            <h2 class=""><strong>Checkout as a Guest</strong></h2>
+                        </div>
+                        <p class='text-danger' *ngIf="message">{{message}}</p>
+                        <form action="#" method="post" [formGroup]="registerForm">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="firstName"><strong>First Name</strong></label>
+                                        <input type="text" formControlName="firstName" class="form-control" id="firstName" #firstName>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="lastName"><strong>Last Name</strong></label>
+                                        <input type="text" formControlName="lastName" class="form-control" id="lastName" #lastName>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group last mb-3">
+                                <label for="email"><strong>Your Email</strong></label>
+                                <input type="email" formControlName="email" class="form-control" id="email" #email>
+                            </div>
+                            <div class="form-group last mb-3">
+                                <label for="mobile"><strong>Your Mobile</strong></label>
+                                <input type="number" formControlName="contact" class="form-control" id="mobile" #mobile>
+                            </div>
+                            <div class="form-group last mb-3">
+                                <label for="password"><strong>Password</strong></label>
+                                <input type="password" formControlName="password" class="form-control" id="password" #password>
+                            </div>
+                            <div class="form-group last mb-3">
+                                <label for="address"><strong>Address</strong></label>
+                                <input type="text" formControlName="address" class="form-control" id="address" #address>
+                            </div>
+                            <div class="form-group last mb-3">
+                                <label for="city"><strong>City</strong></label>
+                                <input type="text" formControlName="city" class="form-control" id="city" #city>
+                            </div>
+                            <div class="form-group last mb-3">
+                                <label for="passcode"><strong>Postcode</strong></label>
+                                <input type="text" formControlName="passcode" class="form-control" id="passcode" #passcode>
+                            </div>
+                            <button type="button" value="Log In" (click)="registerUser()" class="btn btn-block py-2 btn-primary">Go to Payment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
